@@ -1,0 +1,22 @@
+@font-face {
+    font-family: mlhFont;
+    src: url(/media/mlhfont.ttf);
+}
+*{
+    font-family: mlhFont;
+}
+.theme-color{
+    background-color: #1A98FF !important;
+}
+nav{
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
+.navbar-item{
+    color: white !important;
+}
+body{
+    background-image: url("/media/bg.jpg");
+    background-position: center;
+    background-size: contain;
+}
