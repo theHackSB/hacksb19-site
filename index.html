@@ -10,10 +10,6 @@
 </head>
 <body>
         <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                  <a class="navbar-item" onclick="window.reload()"
-                    <img src="media/logo.png" width="150" height="800">
-                  </a>
 
                   <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
@@ -24,23 +20,20 @@
 
                 <div id="navbarBasicExample" class="navbar-menu">
                   <div class="navbar-start">
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="#about">
                       About
                     </a>
 
                     <a class="navbar-item">
-                      Schedule
+                     FAQ
                     </a>
 
                     <a class="navbar-item">
-                            FAQS
-                    </a>
-
-                    <a class="navbar-item">
-                        Sponsors
-                    </a>
-                      </div>
-                    </div>
+                            Schedule
+                           </a>
+                           <a class="navbar-item">
+                                Sponsors
+                               </a>
                   </div>
 
                   <div class="navbar-end">
@@ -55,17 +48,30 @@
                 </div>
               </nav>
 <!-- Content -->
-<div class="body">
-<br>
-hh
-<br>
-jjfjf
-<br>
-jfjfjf
-<br>
+<div class="displayer">
+        <h1 class="title is-1">Hack SB</h1>
+        <h1 class="title is-2">March 2nd</h1>
+       <center>
+            <figure class="image is-square displayImg">
+                <img src="/media/logo.png" alt="logo" class="logoDisplay">
+        </figure>
+    </center>
 </div>
 
+<section id="about">
+    <center>
+            <h1 class="title is-1">About</h1>
+
+            <h1 class="title is-3">What is Hack SB?</h1>
+            <p>Hack SB is a student organized hackathon for high school students.</p>
+
+            <h1 class="title is-3">What is a Hackathon?</h1>
+            <p>A hackathon is an event where people collaboratively or individually make impressive projects using computer science.</p>
+    </center>
+</section>
+
 </body>
+<script src="/scripts/smooth-scroll.polyfills.min.js"></script>
 <script src="/scripts/lil-query.min.js"></script>
 <script src="./scripts/script.js"></script>
 </html>
