@@ -17,9 +17,20 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.displayImg{
+.logoDisplay{
+    max-width: 500px ;
+    max-height: 500px ;
+    min-width: 200px;
+    min-height: 300px;
 
 }
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+    .logoDisplay{
+        width: 300px !important;
+        height: 200px !important;
+    }
+}
+
 .displayer{
     display: flex;
     flex-direction: column;
@@ -28,3 +39,38 @@ body{
     padding: 0 30px;
     text-align: center;
 }
+#about  {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#about span{
+    font-family: 'Product Sans';
+    font-weight: 400;
+}
+#about .is-3{
+    padding: none !important ;
+    margin: none !important ;
+color:#818181;
+}
+.curve{
+}
+#faq{
+    padding-left: 200px;
+    padding-right: 200px;
+    align-content: center;
+}
+.gard {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  section{
+      padding: 15px;
+  }
+  .vard {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+  }

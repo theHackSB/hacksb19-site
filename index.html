@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/png" href="media/favicon.ico"/>
     <link rel="stylesheet" href="/styles/bulma.min.css">
+    <script src="https://sethusenthil.com/Product-Sans/api/font.css"></script>
     <link rel="stylesheet" href="/styles/styles.css">
     <title>Hack SB</title>
 </head>
@@ -24,14 +25,14 @@
                       About
                     </a>
 
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="faq">
                      FAQ
                     </a>
 
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="schedule">
                             Schedule
                            </a>
-                           <a class="navbar-item">
+                           <a class="navbar-item" href="sponsors">
                                 Sponsors
                                </a>
                   </div>
@@ -39,7 +40,7 @@
                   <div class="navbar-end">
                     <div class="navbar-item">
                       <div class="buttons">
-                        <a class="button is-primary theme-color">
+                        <a class="button is-primary theme-color" onclick="signIn()">
                           <strong>Sign up</strong>
                         </a>
                       </div>
@@ -48,30 +49,93 @@
                 </div>
               </nav>
 <!-- Content -->
+<div class="main">
+<section>
 <div class="displayer">
         <h1 class="title is-1">Hack SB</h1>
-        <h1 class="title is-2">March 2nd</h1>
+        <h1 class="title is-2" style="color:#818181">March 2nd</h1>
        <center>
-            <figure class="image is-square displayImg">
-                <img src="/media/logo.png" alt="logo" class="logoDisplay">
-        </figure>
+                <img src="/media/c-logo.png" alt="logo" class="logoDisplay">
+                <br>
+                <a class="button theme-color" style="color:white;" onclick="addtoCal()">Add to Calender</a>
     </center>
 </div>
+</section>
 
 <section id="about">
     <center>
             <h1 class="title is-1">About</h1>
-
             <h1 class="title is-3">What is Hack SB?</h1>
-            <p>Hack SB is a student organized hackathon for high school students.</p>
-
+            <span>Hack SB is a student organized hackathon for high school students.</span>
+<br>
             <h1 class="title is-3">What is a Hackathon?</h1>
-            <p>A hackathon is an event where people collaboratively or individually make impressive projects using computer science.</p>
-    </center>
+        <span>A hackathon is an event where groups of enthusiastic people come together to build awesome things in a limited period of time. At a hackathon, experienced engineers and interested beginners alike will learn new things, build innovative solutions to real-world problems, and share their creation with the community, all in one day. If you want to learn more, see the MLH Hackathon FAQ.</span>
+        <br>
+        <h1 class="title is-3">When is Hack SB?</h1>
+        <span>Date Of Hackathon here</span>
+        </center>
 </section>
+<section class="hero is-info is-bold curve">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              What are you waiting for?
+            </h1>
+            <h2 class="subtitle">
+                    <a class="button theme-color" style="color:white;" onclick="signIn()">Sign Up Now!</a>
+                    <a class="button theme-color" style="color:white;" onclick="addtoCal()">Add to Calender</a>
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+                <div class="columns">
+                        <div class="column">
+                          First column
+                        </div>
+                        <div class="column">
+                          Second column
+                        </div>
+                      </div>
+                      <div class="columns">
+                            <div class="column">
+                              First column
+                            </div>
+                            <div class="column">
+                              Second column
+                            </div>
+                          </div>
+                          <div class="columns">
+                                <div class="column">
+                                  First column
+                                </div>
+                                <div class="column">
+                                  Second column
+                                </div>
+                              </div>
+        </section>
+        <section id="schedule">
+                Schedule
+        </section>
+        <section id="sponsors">
+                sponsors
+        </section>
+        <nav id="dot-nav"></nav>
+
+        <footer class="footer">
+                <div class="content has-text-centered">
+                  <p>
+                    <strong>Hack SB</strong> by <a href="https://sbcompsciclub.github.io">SB Comp Sci Club</a>. The source code is licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                    is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                  </p>
+                </div>
+              </footer>
+            </div>
 
 </body>
 <script src="/scripts/smooth-scroll.polyfills.min.js"></script>
 <script src="/scripts/lil-query.min.js"></script>
-<script src="./scripts/script.js"></script>
+<script src="/scripts/script.js"></script>
 </html>
