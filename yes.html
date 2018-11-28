@@ -28,10 +28,10 @@ body {
   white-space: nowrap;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
 }
-
 </style>
 <div id="messenger"></div>
-<body>
+<center><span id="viewAll" onclick="transcripter()">View Transcript</span></center>
+<body id="body">
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -127,8 +127,11 @@ let Messenger = function(el){
 
   m.init();
 }
-
 console.clear();
-let messenger = new Messenger($('#messenger'));
+
+let transcripter = () =>{
+ doc.getElementById('body').innerHTML = `<center> Lez Git It! <br> 'You have You Have Successfully Signed Up for', <br> 'HackSB', <br> 'See you at the South Brunsiwck Public Library', <br> 'On 9:30AM - 11PM', </center>`;
+},
+messenger = new Messenger($('#messenger'));
 </script>
 </html>
