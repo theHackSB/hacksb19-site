@@ -1,4 +1,5 @@
 log('scripts.js loaded');
+new WOW().init();
 let scroll = new SmoothScroll('a[href*="#"]'),
  burger = doc.querySelector('.burger'),
   nav = doc.querySelector('#'+burger.dataset.target);

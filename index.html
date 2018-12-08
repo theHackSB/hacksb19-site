@@ -27,7 +27,8 @@
 <meta name="og:country-name" content="USA"/>
     <link rel="shortcut icon" type="image/png" href="media/favicon.ico"/>
     <link rel="stylesheet" href="/styles/bulma.min.css">
-    <script src="https://sethusenthil.com/Product-Sans/api/font.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <link rel="stylesheet" href="https://sethusenthil.com/Product-Sans/api/font.css" />
     <link rel="stylesheet" href="/styles/styles.css">
     <title>Hack SB</title>
 </head>
@@ -47,14 +48,14 @@
                       About
                     </a>
 
-                    <a class="navbar-item" href="faq">
+                    <a class="navbar-item" href="#faq">
                      FAQ
                     </a>
 
-                    <a class="navbar-item" href="schedule">
+                    <a class="navbar-item" href="#schedule">
                             Schedule
                            </a>
-                           <a class="navbar-item" href="sponsors">
+                           <a class="navbar-item" href="#sponsors">
                                 Sponsors
                                </a>
                   </div>
@@ -70,10 +71,11 @@
                 </div>
               </nav>
 <!-- Content -->
+<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" onclick="signIn()"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-blue.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
 <div class="main">
 <section>
 <div class="displayer">
-        <h1 class="title is-1">Hack SB</h1>
+        <h1 class="title is-1 wow slideInDown">Hack SB</h1>
         <h1 class="title is-2" style="color:#818181">March 2nd</h1>
        <center>
                 <img src="/media/c-logo.png" alt="logo" class="logoDisplay">
@@ -114,21 +116,21 @@
       <section id="faq">
           <h1 class="title is-1">FAQ</h1>
                 <div class="columns">
-                        <div class="column">
+                        <div class="column wow slideInUp">
                          <h2 class="title is-2"> Do I need a South Brunsiwck library card or registration to attend the event?</h2>
-                        <span>No, you dont need a library registration to attend Hack SB all you need are the paperwork sent to your inbox.</span>
+                        <span>No, you dont need a library registration to attend Hack SB all you need is the paperwork sent to your inbox.</span>
                         </div>
-                        <div class="column">
+                        <div class="column wow slideInUp">
                             <h2 class="title is-2">Can I or my friend participate without registration for hackSB? </h2>
                           <span>Yes - but only if a dosent show up and if you have the required paperwork. We highly recommend you sign up before hand.<span>
                           </div>
                       </div>
-                      <div class="columns">
+                      <div class="columns wow slideInUp">
                           <div class="column">
                               <h2 class="title is-2">I dont know how to code, can I still come. </h2>
-                            <span>Of course, hackSB is tailored for both newcomers and experts. You can attend workshops to get introduced with certian topics and make your first program. In addition, you may seek help from the mentors.<span>
+                            <span>Of course, hackSB is tailored for both newcomers and experts. You can attend workshops to get introduced with certain topics and make your first program. In addition, you may seek help from the mentors.<span>
                             </div>
-                          <div class="column">
+                          <div class="column wow slideInUp">
                               <h2 class="title is-2">What do I need to bring?</h2>
                               <span>
                               You will need:
@@ -145,12 +147,14 @@
                           </div>
         </section>
         <section id="schedule">
-                Schedule
+            <h1 class="title is-1">Schedule</h1>
+TBD
         </section>
         <section id="sponsors">
           <h1 class="title is-1">Sponsors</h1>
           <br>
-          <img src="media/sbpl.gif" alt="" style="border-radius:20px; height: 30%; width:30%;">
+          <img src="media/sbpl.gif" alt="" style="border-radius:10px; height:150px; width:154px;"/>
+          <img src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.svg" alt="height:20px;width:50%"/>
         </section>
         <nav id="dot-nav"></nav>
 
@@ -166,5 +170,6 @@
 </body>
 <script src="/scripts/smooth-scroll.polyfills.min.js"></script>
 <script src="/scripts/lil-query.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="/scripts/script.js"></script>
 </html>
