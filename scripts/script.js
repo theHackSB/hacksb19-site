@@ -8,7 +8,12 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('is-active');
     nav.classList.toggle('is-active');
 });
-
+let snackbar = (text,time) => {
+    var ele = id('snackbar');
+    ele.innerText = text;
+    ele.className = "show";
+    setTimeout(function(){ ele.className = ele.className.replace('show', ''); }, time);
+  }
 const addtoCal = () => {
         window.open('https://calendar.google.com/event?action=TEMPLATE&tmeid=NnNpYmQwdHVxdGFvdjk2OWEwdmxhYWJxZ24gc2Jjb21wc2NpY2x1YkBt&tmsrc=sbcompsciclub%40gmail.com')
     },
@@ -85,7 +90,6 @@ const submit = () => {
                 arr.push(convert(a))
         }
 
-        alert("Please Fill Out Your " + arr.join(', '));
-
+        snackbar("Please Fill Out Your " + arr.join(', '), 3000);
     });
 }

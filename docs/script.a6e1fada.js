@@ -115,6 +115,15 @@ burger.addEventListener('click', function () {
   nav.classList.toggle('is-active');
 });
 
+var snackbar = function snackbar(text, time) {
+  var ele = id('snackbar');
+  ele.innerText = text;
+  ele.className = "show";
+  setTimeout(function () {
+    ele.className = ele.className.replace('show', '');
+  }, time);
+};
+
 var addtoCal = function addtoCal() {
   window.open('https://calendar.google.com/event?action=TEMPLATE&tmeid=NnNpYmQwdHVxdGFvdjk2OWEwdmxhYWJxZ24gc2Jjb21wc2NpY2x1YkBt&tmsrc=sbcompsciclub%40gmail.com');
 },
@@ -203,7 +212,7 @@ var submit = function submit() {
       if (!obj[a]) arr.push(convert(a));
     }
 
-    alert("Please Fill Out Your " + arr.join(', '));
+    snackbar("Please Fill Out Your " + arr.join(', '), 3000);
   });
 };
 },{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -233,7 +242,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54641" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58138" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
