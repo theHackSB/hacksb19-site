@@ -70,8 +70,14 @@ const submit = () => {
                     return "Email";
                 case "grade":
                     return "Grade";
+                case "school":
+                    return "School";
+                case "veg":
+                    return "Vegatarian Status";
+                case "notes":
+                    "";
             }
-            return "Fields";
+            return "Field";
         }
         let arr = [];
         for (let a in obj) {
