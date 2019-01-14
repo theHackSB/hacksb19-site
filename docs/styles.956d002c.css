@@ -1,0 +1,85 @@
+@font-face {
+    font-family: mlhFont;
+    src: url(mlhfont.e10bb1a5.ttf);
+}
+*{
+    font-family: mlhFont;
+}
+.theme-color{
+    background-color: #1A98FF !important;
+}
+nav{
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
+input{
+    font-family: 'Product Sans';
+}
+body{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logoDisplay{
+    max-width: 500px ;
+    max-height: 500px ;
+    min-width: 200px;
+    min-height: 300px;
+
+}
+#otherSchoolCon{
+    display: none;
+}
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+    .logoDisplay{
+        width: 300px !important;
+        height: 200px !important;
+    }
+}
+
+.displayer{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 0 30px;
+    text-align: center;
+}
+#about  {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#about span{
+    font-family: 'Product Sans';
+    font-weight: 400;
+}
+#about .is-3{
+    padding: none !important ;
+    margin: none !important ;
+color:#818181;
+}
+.curve{
+}
+#faq{
+    padding-left: 15%;
+    padding-right: 15%;
+    align-content: center;
+}
+#faq span{
+    font-family: product sans,Arial,sans-serif;
+}
+.gard {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  section{
+      padding: 15px;
+  }
+  .vard {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+  }
