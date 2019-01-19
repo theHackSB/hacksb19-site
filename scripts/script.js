@@ -8,6 +8,7 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('is-active');
     nav.classList.toggle('is-active');
 });
+let carousels = bulmaCarousel.attach();
 let snackbar = (text,time) => {
     var ele = id('snackbar');
     ele.innerText = text;
@@ -92,4 +93,8 @@ const submit = () => {
 
         snackbar("Please Fill Out Your " + arr.join(', '), 3000);
     });
+}
+
+window.onscroll = function () {
+   document.getElementsByClassName('navbar')[0].style.background = '';
 }

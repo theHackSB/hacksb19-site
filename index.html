@@ -16,7 +16,6 @@
     <meta name="reply-to" content="sbcomsciclub@gmail.com">
     <meta name="category" content="hackathon">
     <meta http-equiv="Cache-Control" content="cache">
-
     <meta name="og:title" content="Hack SB" />
     <meta name="og:type" content="website" />
     <meta name="og:image" content="media/logo.png" />
@@ -29,13 +28,14 @@
     <link rel="stylesheet" href="styles/animate.min.css" />
     <link rel="stylesheet" href="https://sethusenthil.com/Product-Sans/api/font.css" />
     <link rel="stylesheet" href="styles/modal-fx.min.css" />
+    <link rel="stylesheet" href="styles/bulma-carousel.min.css">
     <link rel="stylesheet" href="styles/fa/css/all.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Hack SB</title>
 </head>
 
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
 
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
@@ -164,25 +164,30 @@
     </div>
     </div>
 
-    <section>
+    <section class="allMain">
         <div class="displayer">
-            <h1 class="title is-1 wow slideInDown">Hack SB</h1>
-            <h1 class="title is-2" style="color:#818181">April 6th</h1>
+            <h1 class="title is-1 wow slideInDown" style="color:rgb(39, 38, 38)">Hack SB</h1>
+            <h1 class="title is-2" style="color:rgb(204, 202, 202)">April 6th</h1>
             <center>
                 <img src="/media/c-logo.png" alt="logo" class="logoDisplay">
+                <br>
                 <br>
                 <a class="button theme-color modal-button" style="color:white;" data-target="signup-modal">
                     <center>Sign Up Now!</center>
                 </a>
             </center>
+            <br>
+            <br>
         </div>
     </section>
 
     <section id="about">
         <center>
+            <br>
             <h1 class="title is-1">About</h1>
             <h1 class="title is-3">What is Hack SB?</h1>
             <span>Hack SB is a 12 hour student organized hackathon for high school students.</span>
+            <br>
             <br>
             <h1 class="title is-3">What is a Hackathon?</h1>
             <span>A hackathon is an event where groups of enthusiastic people come together to build awesome things in a limited period of time. At a hackathon, experienced engineers and interested beginners will learn new skills, build and innovative solutions for real-world problems, and share their creation with the other participants as well as the judges, all in one day. If you want to learn more, see the <a href="https://mlh.io/faq">MLH Hackathon FAQ</a>.</span>
@@ -195,16 +200,55 @@
 
         </center>
     </section>
-    <section class="hero is-info is-bold curve">
+    <section class="hero is-info is-bold curve" id="navBold">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
                     What are you waiting for?
                 </h1>
-                <h2 class="subtitle">
+               <h2 class="subtitle">
                     <a class="button theme-color modal-button" style="color:white;" data-target="signup-modal">Sign Up Now!</a>
                     <a class="button theme-color" style="color:white;" onclick="addtoCal()">Add to Calender</a>
                 </h2>
+                <center>
+                <div class='carousel carousel-animated carousel-animate-slide' data-autoplay="true">
+                        <div class='carousel-container'>
+                          <div class='carousel-item has-background is-active'>
+                            <img class="is-background" src="media/prizes.jpg" alt="" width="640" height="310" />
+                            <div class="title">Win Cool Prizes</div>
+                          </div>
+                          <div class='carousel-item has-background'>
+                            <img class="is-background" src="media/lesson.jpg" alt="" width="640" height="310" />
+                            <div class="title">Attend Workshops</div>
+                          </div>
+                          <div class='carousel-item has-background'>
+                            <img class="is-background" src="media/winners.jpg" alt="" width="640" height="310" />
+                            <div class="title">Win the Hack</div>
+                          </div>
+                          <div class='carousel-item has-background'>
+                                <img class="is-background" src="media/sticker.jpg" alt="" width="640" height="310" />
+                                <div class="title">Cop Some Free Swag</div>
+                              </div>
+                          <div class='carousel-item has-background'>
+                            <img class="is-background" src="media/prizeAnn.jpg" alt="" width="640" height="310" />
+                            <div class="title">Announcements</div>
+                          </div>
+                          <div class='carousel-item has-background'>
+                                <img class="is-background" src="media/coding.jpg" alt="" width="640" height="310" />
+                                <div class="title">Hack</div>
+                              </div>
+                        </div>
+                        <div class="carousel-navigation is-overlay">
+                                <div class="carousel-nav-left">
+                                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                </div>
+                                <div class="carousel-nav-right">
+                                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                      </div>
+                    </center>
+
             </div>
         </div>
     </section>
@@ -257,9 +301,13 @@
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
-                © 2018 Copyright: HackSB
+                    <i class="far fa-copyright"></i> 2018 Copyright: HackSB
             </p>
-        </div>
+            <i class="fab fa-twitter" onclick="window.open('https://twitter.com/thehacksb')"></i>
+            <i class="fab fa-instagram" onclick="window.open('https://twitter.com/hacksb')"></i>
+            <i class="fab fa-facebook-square" onclick="window.open('https://twitter.com/hacksb')"></i>
+            <i class="fas fa-envelope" onclick="window.open('mailto:sbcompsciclub@gmail.com')"></i>
+                </div>
     </footer>
     </div>
     <div id="snackbar">Loading...</div>
@@ -281,6 +329,7 @@
 <script src="scripts/smooth-scroll.polyfills.min.js"></script>
 <script src="scripts/lil-query.min.js"></script>
 <script src="scripts/wow.min.js"></script>
+<script src="scripts/bulma-carousel.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
 <script src="scripts/script.js"></script>
 
