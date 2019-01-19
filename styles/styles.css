@@ -13,7 +13,7 @@ nav{
     color: white !important;
 }
 .modal-close .is-large{
-    display:none;
+    display:none !important;
 }
 input{
     font-family: 'Product Sans';
@@ -96,7 +96,7 @@ color:#818181;
   border-radius: 15px;
   padding: 16px;
   position: fixed;
-  z-index: 1;
+  z-index: 50l;
   left: 50%;
   bottom: 30px;
   font-size: 17px;
