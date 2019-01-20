@@ -208,8 +208,8 @@ color:#818181;
   to {bottom: 0; opacity: 0;}
 }
 .carousel{
-    width: 80% !important;
-    height: 65% !important;
+    width: 67% !important;
+    height: 60% !important;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -245,4 +245,7 @@ border-bottom-left-radius: 10px !important;
 footer .fab, footer .fas{
 padding: 5px;
 font-size: 25px;
+}
+#navBold .button{
+    padding: 10px;
 }

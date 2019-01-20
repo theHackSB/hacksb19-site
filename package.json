@@ -1,0 +1,25 @@
+{
+  "name": "thehacksb.github.io",
+  "version": "1.0.0",
+  "description": "Hack SB is a 12 hour student organized hackathon for high school students. This repository contains the source code for the official landing page.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theHackSB/thehacksb.github.io.git"
+  },
+  "author": "Sethu Senthil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theHackSB/thehacksb.github.io/issues"
+  },
+  "homepage": "https://github.com/theHackSB/thehacksb.github.io#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9",
+    "opn": "^5.4.0"
+  }
+}
