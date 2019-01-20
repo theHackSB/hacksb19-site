@@ -18,8 +18,9 @@ nav{
     background: rgba(255, 255, 255, 0.2) !important;
     color: white !important;
 }
-.modal-close .is-large{
-    display:none !important;
+.modal-close{
+color: black !important;
+background: red;
 }
 input{
     font-family: 'Product Sans';
@@ -207,8 +208,8 @@ color:#818181;
   to {bottom: 0; opacity: 0;}
 }
 .carousel{
-    width: 80%;
-    height: 65%;
+    width: 80% !important;
+    height: 65% !important;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
