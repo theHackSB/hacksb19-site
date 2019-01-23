@@ -95,9 +95,9 @@ const submit = () => {
         alert("Please Fill Out Your " + arr.join(', '));
     });
 }
-let closeModal = () =>{
+let toggleModal = () =>{
     let ele = id('signup-modal');
-    ele.classList.remove("is-active");
+    ele.classList.toggle("is-active");
 }
 
 window.onscroll = function () {

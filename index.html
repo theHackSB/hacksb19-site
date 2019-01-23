@@ -68,7 +68,7 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary theme-color modal-button" data-target="signup-modal">
+                        <a class="button is-primary theme-color modal-button" onclick="toggleModal()">
                             <strong>Sign up</strong>
                         </a>
                     </div>
@@ -164,7 +164,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="modal-close is-large" aria-label="close" onclick="closeModal()"></button>
+                <button class="modal-close is-large" aria-label="close" onclick="toggleModal()"></button>
             </div>
         </div>
     </div>
@@ -178,7 +178,7 @@
                 <img src="/media/c-logo.png" alt="logo" class="logoDisplay">
                 <br>
                 <br>
-                <a class="button theme-color modal-button" style="color:white;" data-target="signup-modal">
+                <a class="button theme-color modal-button" style="color:white;" onclick="toggleModal()">
                     <center>Sign Up Now!</center>
                 </a>
             </center>
@@ -204,8 +204,9 @@
             <center><iframe src="https://player.vimeo.com/video/202113885" width="100%" height="60%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
             <br>
             <h1 class="title is-3">When is Hack SB?</h1>
-            <span>April 6th</span>
-            <br />
+            <span style="font-size: 30px !important; font-weight: bold;">April 6th</span>
+            <br/>
+            <br>
             <a class="button theme-color" style="color:white;" onclick="addtoCal()">Add to Calender</a>
 
         </center>
@@ -217,7 +218,7 @@
                     What are you waiting for?
                 </h1>
                 <h2 class="subtitle">
-                    <a class="button theme-color modal-button" style="color:white;" data-target="signup-modal">Sign Up
+                    <a class="button theme-color modal-button" style="color:white;" onclick="toggleModal()">Sign Up
                         Now!</a>
                     <a class="button theme-color" style="color:white;" onclick="addtoCal()">Add to Calender</a>
                 </h2>
@@ -352,7 +353,6 @@
 <script src="scripts/lil-query.min.js"></script>
 <script src="scripts/wow.min.js"></script>
 <script src="scripts/bulma-carousel.min.js"></script>
-<script type="text/javascript" src="scripts/modal-fx.min.js"></script>
 <script src="scripts/script.js"></script>
 
 </html>
