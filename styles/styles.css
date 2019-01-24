@@ -249,3 +249,6 @@ font-size: 25px;
 #navBold .button{
     padding: 10px;
 }
+.footer a{
+    color: inherit;
+}
