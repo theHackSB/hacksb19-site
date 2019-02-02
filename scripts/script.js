@@ -96,8 +96,9 @@ const submit = () => {
     });
 }
 let toggleModal = () =>{
-    let ele = id('signup-modal');
-    ele.classList.toggle("is-active");
+    snackbar('Sorry, Signups didn')
+    //let ele = id('signup-modal');
+    //ele.classList.toggle("is-active");
 }
 
 window.onscroll = function () {

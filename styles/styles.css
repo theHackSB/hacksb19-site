@@ -5,6 +5,10 @@
 *{
     font-family: mlhFont;
 }
+* ::selection{
+    background-color: #1a98ff;
+    color: white;
+}
 .theme-color{
     background-color: #1A98FF !important;
 }
@@ -251,4 +255,7 @@ font-size: 25px;
 }
 .footer a{
     color: inherit;
+}
+#about .fas, .fa-calendar{
+    padding-right: 8px;
 }
