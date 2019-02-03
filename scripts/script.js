@@ -36,7 +36,7 @@ const submit = () => {
         grade = id('grade').value,
         school = id('schoooool').value,
         otherSchool = id('otherSchool').value,
-        VegOrNon = id('veg').value === "Vegetarian",
+        VegOrNon = id('veg').value,
         notes = id('notes').value,
         finalSchool;
     if (school === 'South Brunswick High School') {
@@ -96,9 +96,9 @@ const submit = () => {
     });
 }
 let toggleModal = () =>{
-    snackbar('Sorry, Signups didn')
-    //let ele = id('signup-modal');
-    //ele.classList.toggle("is-active");
+    //snackbar('Sorry, Signups didn')
+    let ele = id('signup-modal');
+    ele.classList.toggle("is-active");
 }
 
 window.onscroll = function () {

@@ -5,6 +5,9 @@
 *{
     font-family: mlhFont;
 }
+* .gfont{
+    font-family: 'Product Sans' !important;
+}
 * ::selection{
     background-color: #1a98ff;
     color: white;
