@@ -13,7 +13,7 @@ Note: Comes with hot reload
 # DevOps
 In effort to keep the source code and the production build, we used some little tricks to save time for both the developer and the user.
 ## CDN minification
-Instead of minifying out code using webpack or parcel which would require a different type of a project arcuture, we used the Cloudflare's CDN service and installed a few scripts which will minify our code on the server and cache the page when offline using the Service Worker API.
+Instead of minifying out code using webpack or parcel which would require a different type of a project architecture, we used the Cloudflare's CDN service and installed a few scripts which will minify our code on the server and cache the page when offline using the Service Worker API.
 
 # Backend
-We believe in the serverless idology, therefore we used firebase realtime database to store the user information. We used firebase cloud functions to secure our database to restrict unwanted reads and writes to the DB. Using React js we were able to create a visualization of the data.
+We believe in the serverless ideology, therefore we used firebase realtime database to store the user information. We used firebase cloud functions to secure our database to restrict unwanted reads and writes to the DB. Using React js we were able to create a visualization of the data.
