@@ -92,7 +92,6 @@ const submit = () => {
         }
 
         snackbar("Please Fill Out Your " + arr.join(', '), 3000);
-        alert("Please Fill Out Your " + arr.join(', '));
     });
 }
 let toggleModal = () =>{
