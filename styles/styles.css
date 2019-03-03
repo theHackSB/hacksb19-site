@@ -274,7 +274,7 @@ th, td {
     border-bottom: 2px solid white;
   }
 
-  #signup-modal{
+  #signup-modal, #under-btn{
       z-index: 52 !important;
   }
 
