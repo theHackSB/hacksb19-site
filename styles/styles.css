@@ -273,8 +273,10 @@ th, td {
     background: #ddd;
     border-bottom: 2px solid white;
   }
-
-  #signup-modal, #under-btn{
+  #under-btn{
+    z-index: 51 !important;
+  }
+  #signup-modal{
       z-index: 52 !important;
   }
 
