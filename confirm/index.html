@@ -69,8 +69,13 @@
         document.getElementById("key").value = (location.href.split("?").length === 2) ? location.href.split("?")[1] : "";
         document.getElementById("form").onsubmit = e => {
             e.preventDefault();
-            firebase.database().ref("/registrations/" + new Date().getFullYear() + "/" + document.getElementById("key").value + "/confirmed").set(true);
-            document.write("<body style='margin: 0; padding: 0'><iframe style='margin: 0; border-width: 0; padding: 0; width:100vw; height: 100vh;' src='../yes.html'></iframe></body>");
+            firebase.database().ref("/registrations/" + new Date().getFullYear() + "/" + document.getElementById("key").value + "/confirmed").set(true, err => {
+                if (err)
+                    document.write("An error has occurred: \n" + err + "\n\nEither the key was entered in wrong or we have too many people already confirmed\nIf that is the case, do not worry since you can still walk in at 9:30 AM and we will give you a spot if we can fit you.");
+                else
+                    document.write("<body style='margin: 0; padding: 0'><iframe style='margin: 0; border-width: 0; padding: 0; width:100vw; height: 100vh;' src='../yes.html'></iframe></body>");
+
+            });
         };
     </script>
 
