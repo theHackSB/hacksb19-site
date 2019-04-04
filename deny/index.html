@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deny</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            color: white;
+            padding: 0;
+            margin: 0;
+        }
+        
+        html,
+        body {
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        form {
+            width: 60%;
+        }
+        
+        h1 {
+            color: rgb(255, 47, 47);
+            font-weight: bold;
+        }
+        
+        b {
+            font-size: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <center> -->
+    <h1>Not Attending HackSB</h1>
+    <p>This confirms that you will not be attending HackSB on April 6th. Be aware that if you do this <b>you will lose your spot.</b></p>
+    <form id="form">
+        <div class="form-group">
+            <label for="key" style="font-size : 150%;">Key</label>
+            <input class="form-control" id="key" aria-describedby="emailHelp" placeholder="Enter key">
+        </div>
+        <button id="btn" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <!-- </center> -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script>
+        const config = {
+            apiKey: "AIzaSyArFWjDB_RY6JzTLOkCLROvpSbpeqoCnrw",
+            authDomain: "hacksbreg.firebaseapp.com",
+            databaseURL: "https://hacksbreg.firebaseio.com",
+            projectId: "hacksbreg",
+            storageBucket: "hacksbreg.appspot.com",
+            messagingSenderId: "1064689868252"
+        };
+        firebase.initializeApp(config);
+        document.getElementById("key").value = (location.href.split("?").length === 2) ? location.href.split("?")[1] : "";
+        document.getElementById("form").onsubmit = e => {
+            e.preventDefault();
+            firebase.database().ref("/registrations/" + new Date().getFullYear() + "/" + document.getElementById("key").value + "/denied").set(true);
+            document.write("<body style='margin: 0; padding: 0'><iframe style='margin: 0; border-width: 0; padding: 0; width:100vw; height: 100vh;' src='../yes.html'></iframe></body>");
+        };
+    </script>
+
+</body>
+
+</html>
