@@ -53,7 +53,7 @@ const submit = () => {
         school: finalSchool,
         veg: VegOrNon,
         notes: notes,
-        came: "yes"
+        // came: "yes"
     }).then(ref => {
         console.log('Added doc to database with doc id: ', ref.id);
         window.location.href = '/yes.html';
